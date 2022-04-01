@@ -43,7 +43,9 @@ module.exports = {
     new ModuleFederationPlugin({
       name: "home",
       filename: "remoteEntry.js",
-      remotes: {},
+      remotes: {
+        lookup: "lookup@http://localhost:3001/remoteEntry.js",
+      },
       exposes: {},
       shared: {
         ...deps,
