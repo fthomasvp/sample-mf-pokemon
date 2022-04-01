@@ -44,7 +44,9 @@ module.exports = {
       name: "lookup",
       filename: "remoteEntry.js",
       remotes: {},
-      exposes: {},
+      exposes: {
+        "./SearchBar": "./src/components/search-bar/SearchBar.tsx",
+      },
       shared: {
         ...deps,
         react: {

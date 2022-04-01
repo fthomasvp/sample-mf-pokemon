@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
+import SearchBar from "./components/search-bar/SearchBar";
 import "./index.css";
 
-const App = () => (
-  <div className="container">
-    <div>Name: lookup</div>
-    <div>Framework: react</div>
-    <div>Language: TypeScript</div>
-    <div>CSS: Empty CSS</div>
-  </div>
-);
+const App = () => {
+  return (
+    <div className="container">
+      <SearchBar />
+    </div>
+  );
+};
 ReactDOM.render(<App />, document.getElementById("app"));
